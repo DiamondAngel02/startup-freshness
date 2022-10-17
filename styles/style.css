@@ -69,23 +69,42 @@ table {
 	border-spacing: 0;
 }
 
+body {
+    background-color: var(--lightbeige);
+}
+
+/* logo */
+#logo {
+    margin: 10px 16px;
+    float: right;
+}
+
 /* Nav menu */
-.nav{
+.nav-menu{
     width: 100%;
-    height: 100%;
+    max-height: 0;
+    margin: 0px 0px 0px 0px;
     position: fixed;
-    background-color: none;
+    background-color: var(--white);
     overflow: hidden;
-   
-  
+    z-index: 97;
+    
+  } 
+
+  .menu {
+    padding: 60px;
   }
+
   .menu a{
     display: block;
-    text-align: center;
-    padding: 20px;
+    padding-top: 40px;
     font-size: 28px;
     color: var(--black);
+    text-decoration: none;
+    font-family: 'Gilda Display', serif;
+
   }
+
   .menu a:hover{
     background-color: var(--lightbeige);
     text-decoration: none;
@@ -98,16 +117,16 @@ table {
   /* Menu Icon */
   .hamb{
     cursor: pointer;
-    float: right;
-    padding: 37px 16px;
+    float: left;
+    padding: 30px 16px;
   }/* Style label tag */
   
   .hamb-line {
     background: var(--black);
     display: block;
-    height: 2px;
+    height: 1px;
     position: relative;
-    width: 24px;
+    width: 18px;
   
   } /* Style span tag */
   
@@ -119,24 +138,24 @@ table {
     height: 100%;
     position: absolute;
     transition: all .2s ease-out;
-    width: 100%;
+    width: 150%;
   }
   .hamb-line::before{
-    top: 5px;
+    top: 7px;
   }
   .hamb-line::after{
-    top: -5px;
+    top: -7px;
   }
   
   .side-menu {
     display: none;
+    margin: 25px 0px 0px -30px;
   } /* Hide checkbox */
   
   /* Toggle menu icon */
-  .side-menu:checked ~ nav{
+  .side-menu:checked ~ .nav-menu{
     max-height: 100%;
   }
-  
   
   .side-menu:checked ~ .hamb .hamb-line {
     background: transparent;
@@ -144,20 +163,22 @@ table {
   .side-menu:checked ~ .hamb .hamb-line::before {
     transform: rotate(-45deg);
     top:0;
+    z-index: 99;
   }
   .side-menu:checked ~ .hamb .hamb-line::after {
     transform: rotate(45deg);
     top:0;
+    z-index: 99;
   }
   
   
   /* Responsiveness */
-  @media (min-width: 1500px) {
+  @media (min-width: 750px) {
     .nav{
         max-height: none;
         top: 0;
         position: relative;
-        float: right;
+        float: left;
         width: fit-content;
        
     }
@@ -167,12 +188,12 @@ table {
   
    .menu a{
     font-size: 25px;
-    padding: 21px;
+    padding: 1px;
    }
   
     .menu a:hover{
         background-color: transparent;
-        color: var(--gray);
+        color: var(--lightbeige);
   
     }
   
@@ -219,9 +240,12 @@ table {
     display: flex;
     position: relative;
     background-image: url('../images/pop-up-header.png');
+    background-repeat: no-repeat;
     width: 428px;
     height: 432px;
-    margin-top: 100px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 #h1-container {
@@ -230,7 +254,7 @@ table {
     height: 126px;
     width: 100%;
     background-color: var(--green);
-    margin-top: 170px;
+    margin-top: 50px;
    
 }
 
@@ -246,15 +270,16 @@ table {
 .pop-header .btn-txt{
     color: var(--lightbeige);
     font-size: 20px;
-    text-align: center;
+    text-align: center; 
+    font-family: 'Gilda Display', serif;
 }
 .pop-header .btn-container{
     display: flex;
     position: absolute;
-    justify-content: center;
     padding: 20px;
     background-color: var(--green);
-      /*  margin-top: 325px;*/
+    margin-top: 280px;
+    border-radius: 10px;
 }
 
 .pop-header #pop-button {
