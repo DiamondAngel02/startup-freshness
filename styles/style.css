@@ -183,13 +183,13 @@ body {
 
 .menu {
     padding-top: 170px;
-    padding-left: 75px;
+   
     height: 100vh;
 }
 
 .menu a {
     display: block;
-    padding-top: 40px;
+    padding: 20px 0px 20px 75px;
     font-size: 28px;
     color: var(--black);
     text-decoration: none;
@@ -199,7 +199,6 @@ body {
 
 .menu a:hover {
     background-color: var(--lightbeige);
-    text-decoration: none;
 }
 
 .nav {
@@ -237,11 +236,11 @@ body {
 }
 
 .hamb-line::before {
-    top: 7px;
+    top: 8px;
 }
 
 .hamb-line::after {
-    top: -7px;
+    top: -8px;
 }
 
 /* Hide checkbox */
@@ -277,6 +276,9 @@ body {
     z-index: 99;
 }
 
+#cart-nr {
+    font-family: 'Gilda Display', serif;
+}
 
 /* Responsiveness */
 @media (min-width: 750px) {
