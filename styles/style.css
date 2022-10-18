@@ -169,6 +169,7 @@ body {
     background-color: var(--black);
     color: var(--lightbeige);
     padding: 4px;
+    text-align: center;
 }
 
 /* logo */
@@ -412,11 +413,34 @@ body {
  background-image: url(/images/header-back.svg);
  background-repeat: no-repeat;
  display: flex;
+ flex-direction: column;
  position: relative;
+ width: 428px;
+ height: 400px;
+ margin-top: 20px;
+ border-color: var(--lightbeige);
 }
 
-#header-back {
-    width: 428px;
-    height: 400px;
-    z-index: 0;
+.header h1 {
+    margin: 40px 0px 0px 20px;
+    display: flex;
+    position: absolute;
+    font-size: 34px;
+    font-family: 'Gilda Display', serif;
+    color: var(black);
+}
+
+.header p {
+    margin: 120px 25px 0px 20px;
+    display: flex;
+    position: absolute;
+    font-size: 20px;
+    color: var(black);
+}
+
+.header p:after {
+    display: flex;
+    position: absolute;
+    color: var(--lightbeige);
+    mix-blend-mode: overlay;
 }
