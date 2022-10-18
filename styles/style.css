@@ -2,6 +2,7 @@
 /* import font */
 @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:wght@300;400;600&display=swap');
 
+/* variables for the colors that will be used on the page, to add use var(--COLOUR) instead of hex or rgb*/
 :root {
     --white: #ffff;
     --black: #1F2125;
@@ -12,8 +13,6 @@
     --orange: #ED9B64;
     --blue: #8D95C3;
 }
-
-/* variables for the colors that will be used on the page */
 
 /* Reset to none*/
 * {
@@ -161,6 +160,15 @@ table {
 
 body {
     background-color: var(--lightbeige);
+}
+
+/* promo banner */
+.promo {
+    display: block;
+    font-size: 16px;
+    background-color: var(--black);
+    color: var(--lightbeige);
+    padding: 4px;
 }
 
 /* logo */
@@ -311,7 +319,7 @@ body {
     }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1240px) {
     .nav {
         max-height: none;
         top: 0;
@@ -396,4 +404,19 @@ body {
 
 .pop-header #pop-button {
     text-decoration: none;
+}
+
+/* Header */
+
+.header {
+ background-image: url(/images/header-back.svg);
+ background-repeat: no-repeat;
+ display: flex;
+ position: relative;
+}
+
+#header-back {
+    width: 428px;
+    height: 400px;
+    z-index: 0;
 }
