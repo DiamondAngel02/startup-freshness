@@ -21,6 +21,10 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: var(--lightbeige);
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -113,7 +117,9 @@ video {
     font-size: 100%;
     font: 'Montserrat';
     font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     vertical-align: baseline;
+    color: var(--black);
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -170,6 +176,7 @@ body {
     color: var(--lightbeige);
     padding: 4px;
     text-align: center;
+    width: 100vw;
 }
 
 /* logo */
@@ -392,19 +399,18 @@ body {
     font-size: 20px;
     text-align: center;
     font-family: 'Gilda Display', serif;
+    background-color: transparent;
+    border: none;
 }
 
-.pop-header .btn-container {
+.pop-header a {
     display: flex;
     position: absolute;
     padding: 20px;
     background-color: var(--green);
     margin-top: 280px;
-    border-radius: 10px;
-}
-
-.pop-header #pop-button {
     text-decoration: none;
+    border-radius: 10px;
 }
 
 /* Header */
@@ -416,9 +422,8 @@ body {
  flex-direction: column;
  position: relative;
  width: 428px;
- height: 400px;
+ height: 550px;
  margin-top: 20px;
- border-color: var(--lightbeige);
 }
 
 .header h1 {
@@ -427,20 +432,54 @@ body {
     position: absolute;
     font-size: 34px;
     font-family: 'Gilda Display', serif;
-    color: var(black);
+    color: var(--lightbeige);
+    mix-blend-mode: exclusion;
 }
 
 .header p {
-    margin: 120px 25px 0px 20px;
+    margin: 125px 25px 0px 20px;
     display: flex;
     position: absolute;
     font-size: 20px;
-    color: var(black);
+    color: var(--lightbeige);
+    mix-blend-mode: exclusion;
+
 }
 
-.header p:after {
+.header .product{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    font-family: 'Gilda Display', serif;
+    border: none;
+    background-color: var(--black);
+    color: var(--lightbeige);
+    border-radius: 16px;
+    margin-top: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.header a {
     display: flex;
     position: absolute;
-    color: var(--lightbeige);
-    mix-blend-mode: overlay;
+    justify-content: center; 
+}
+
+/* Features */
+.feature {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 428px;
+    height: 500px;
+    background-color: var(--beige);
+}
+
+.feature h1 {
+    display: flex;
+    font-family: 'Gilda Display', serif;
+    font-size: 40px;
+    justify-content: center;
+
 }
