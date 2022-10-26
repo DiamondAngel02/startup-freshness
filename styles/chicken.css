@@ -575,7 +575,7 @@ body {
 #next2 {
     display: flex;
     flex-direction: row;
-    height: 200px;
+    height: 120px;
     width: 100vw;
     justify-content: center;
     gap: 16px;
@@ -583,11 +583,12 @@ body {
 
 #next2 h4{
     font-size: 16px;
-    height: 40px;
+    height: 55px;
     font-family: 'Gilda Display', serif;
     display: flex;
     width: 180px;
     justify-content: center;
+    align-items: center;
 }
 
 #next2 div div, #next2 div div div {
