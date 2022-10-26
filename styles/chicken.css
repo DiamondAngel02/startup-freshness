@@ -572,6 +572,41 @@ body {
     margin: 1.5em .5em 1em .5em; 
 }
 
+#next2 {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 100vw;
+    justify-content: center;
+    gap: 16px;
+}
+
+#next2 h4{
+    font-size: 16px;
+    height: 40px;
+    font-family: 'Gilda Display', serif;
+    display: flex;
+    width: 180px;
+    justify-content: center;
+}
+
+#next2 div div, #next2 div div div {
+    display: flex;
+    justify-content: center;
+}
+
+#next2 button {
+    height:30px;
+    width:100px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--orange);
+    font-family: 'Gilda Display', serif;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 0.2);
+    color: var(--lightbeige);
+    justify-content: center;
+}
+
 
 /* Footer */
 
