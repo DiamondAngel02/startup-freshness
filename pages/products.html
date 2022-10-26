@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,36 +8,96 @@
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <!-- stylesheet for the html -->
-    <link rel="stylesheet" href="styles/style.css">
-
+    <link rel="stylesheet" href="/styles/product.css">
 </head>
+
 <body>
-<p class="promo">Promocode! - velkommen15</p>
-<!-- Navigation start -->
-<div class="nav">
-    <!-- Logo -->
-    <a href="index.html" id="logo"><img src="/images/logo.svg" alt=""></a>
-    <!-- -->
+    <p class="promo">Promocode! - velkommen15</p>
+    <!-- Navigation start -->
+    <div class="nav">
+  <!-- Logo -->
+  <a href="index.html" id="logo"><img src="/images/logo.svg" alt=""></a>
+  <!-- -->
 
-    <!-- Hamburger icon -->
-    <input class="side-menu" type="checkbox" id="side-menu" />
-    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+  <!-- Hamburger icon -->
+  <input class="side-menu" type="checkbox" id="side-menu" />
+  <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
 
-    <!-- Menu-->
-    <nav class="nav-menu">
-        <ul class="menu">
-            <li id="" class="menu_item"><a href="/index.html">HOME</a></li>
-            <li id="" class="menu_item"><a href="pages/products.html">PRODUCT</a></li>
-            <li id="" class="menu_item"><a href="pages/account.html">ACCOUNT</a></li>
-            <li id="" class="menu_item"><a href="pages/cart.html">CART (<span id="cart-nr">0</span>)</a></li>
-            <li id="" class="menu_item"><a href="pages/blog.html">BLOG</a></li>
-        </ul>
-</div>
-<!-- Navigation end -->
+        <!-- Drop-down liste-->
+            <nav class="nav-menu">
+            <div class="search">
+                <img src="/images/small.png" alt="">
+                <input type="text" placeholder="Search" name="seach" id="">
+            </div>
 
+            <ul class="menu">
+                <li id="" class="menu_item"><a href="/index.html">HOME</a></li>
+                <li id="" class="menu_item"><a href="/pages/products.html">PRODUCTS</a></li>
+                <li id="" class="menu_item"><a href="/pages/account.html">ACCOUNT</a></li>
+                <li id="" class="menu_item"><a href="/pages/cart.html">CART (<span id="cart-nr">0</span>)</a></li>
+                <li id="" class="menu_item"><a href="/pages/blog.html">BLOG</a></li>
+            </ul>
+    </div>
+    
+    <!--Box menu-->
+    <div class="borderbox1">
+        <a href="/pages/products/chicken.html"><h2>Chicken</h2></a>
+    </div>
 
-<!-- Footer -->
+    <div class="borderbox2">
+        <a href="/pages/products/meat.html"><h2>Meat</h2></a>
+    </div>
 
+    <div class="borderbox3">
+        <a href="/pages/products/veg.html"><h2>Vegetarian</h2></a>
+    </div>
+
+    <!-- tekst på siden -->
+    <div class="Stor-skrift">
+        <h2>We have three different options to choose from</h2>
+        <h4>Pick the one that intrigue you most or the one that sounds the yummies</h4>
+    </div>
+
+    <div class="tesktindhold">
+        <h3>Chicken:<i>A lean and good protein, added with healthy fats, carbs and vegetables.</i></h3>
+        <h3>Meat:<i>Filled with iron and protein.</i></h3>
+        <h3>Vegetarian:<i>Find the protein in beans.</i></h3>
+    </div>  
+         
+    <!-- Nederste side/footer -->
+    <footer>
+        <h1>Lets keep in touch!</h1>
+        <p>Get our newsletter right in <br>
+            your digital mailbox
+        </p>
+        <div class="newsletter">
+            <input type="text" placeholder="Email">
+        <button>Subscribe</button>
+        </div>
+
+        <h2 class="social">Your lunch pack that is with
+            you even when you are on the move
+        </h2>
+
+        <div class="some">
+            <a href="https://www.instagram.com/"><img class="insta" src="/images/instagram2.svg" alt=""></a>
+        <a href="https://www.facebook.com/"><img class="fb" src="/images/facebook2.svg" alt=""></a>
+        </div>
+
+        <h2>Åbningstider</h2>
+        <p>Telefon: 420030</p>
+        <p>Telefontider: <br>
+            mandag-fredag: 11-15</p>
+
+        <h2>Lokation</h2>
+        <p>Freshness Aps <br>
+            CVR: 00000000 <br>
+            Nogotgade 09, 3000 By <br>
+            +45 42 00 30 <br>
+            freshness@gmail.com</p>
+
+        <img src="/images/beige2.png" alt="pattern">
+        <p>&copy; Freshness | 2022 All Right Reserved</p>
+    </footer>
 </body>
-
 </html>

@@ -1,6 +1,6 @@
 /* Theming */
 /* import font */
-@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:wght@300;400;500;600&display=swap');
 
 /* variables for the colors that will be used on the page, to add use var(--COLOUR) instead of hex or rgb*/
 :root {
@@ -414,17 +414,164 @@ body {
 .p-info {
     display: inline-block;
     width: 100vw;
-    margin-left: 26px;
+    margin: 0px 26px 0px 26px;
 }
 
 .p-info h1{
     font-size: 34px;
+    margin-top: 30px;
     font-family: 'Gilda Display', serif;
 }
 
 .p-info h3{
-    font-size: 34px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
 }
+
+#add {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.p-info input{
+    width:80px;
+    height:60px;
+    border-radius: 12px;
+    border-width: 1px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Gilda Display', serif;
+}
+
+.p-info button{
+    height:60px;
+    width:180px;
+    border-radius: 16px;
+    margin-left: 1em;
+    border: none;
+    background-color: var(--orange);
+    font-family: 'Gilda Display', serif;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 0.2);
+    font-size: 24px;
+    color: var(--lightbeige);
+}
+
+.p-info p{
+    font-size: 14px;
+}
+
+/* List */
+.list h2{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.list ul{
+    list-style: disc;
+    margin-left: 46px;   
+     margin-top: 35px;
+}
+
+.list li{
+    font-size: 24px;
+    font-weight: 500;
+}
+/* product details */
+.details {
+    margin-top: 40px;
+    height: 750px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.details h1{
+    line-height: 75px;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Gilda Display', serif;
+    color: var(--lightbeige);
+    width: 100vw;
+    height: 75px;
+    background-color: var(--orange);
+    color: var(--lightbeige);
+}
+
+.details h2 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.details #circle{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 170px;
+    transform: translate(-50%);
+}
+
+.details #tracker{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 550px;
+    transform: translate(-50%);
+    
+}
+
+.info h2 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.info p {
+    margin: 20px 26px 10px 26px;
+    font-size: 20px;
+}
+
+/* bottom */
+.bottom {
+    width: 100vw;
+}
+
+.bottom img {
+    width: 100vw;
+}
+
+.bottom h1{
+    font-size: 24px;
+    font-family: 'Gilda Display', serif;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#next {
+    width: 100vw;
+    height: 200px;
+    text-align: center;
+}
+
+#next #v-c1{
+    width: 180px;
+    margin: 1.5em .5em 2em .5em; 
+}
+
+#next #m-c1{
+    width: 180px;
+    margin: 1.5em .5em 2em .5em; 
+}
+
 
 /* Footer */
 
