@@ -331,7 +331,7 @@ body {
 }
 
 /* Responsiveness */
-@media (min-width: 750px) {
+@media (min-width: 550px) {
     .nav {
         max-height: none;
         top: 0;
@@ -361,19 +361,18 @@ body {
     }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
     .nav {
         max-height: none;
         top: 0;
         position: relative;
-        float: right;
         width: fit-content;
-        display: block;
+        display: flex;
 
     }
 
     .menu li {
-        float: left;
+      
 
     }
 
@@ -400,23 +399,35 @@ body {
 .pop-header {
     display: flex;
     position: relative;
-    background-image: url('../images/pop-up-header.png');
-    background-repeat: no-repeat;
-    width: 428px;
+    width: 100vw;
     height: 432px;
     margin-top: 10px;
     justify-content: center;
     align-items: center;
 }
 
+.pop-header .backg-s{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    min-height: 300px;
+    top: 1%;
+}
+
+.backg {
+    display: none;
+}
+
 #h1-container {
     display: flex;
     position: absolute;
     height: 126px;
-    width: 100%;
+    width: 100vw;
     background-color: var(--green);
-    margin-top: 50px;
-
+    left: 50%;
+    transform: translate(-50%);  
 }
 
 #h1-container h1 {
@@ -443,6 +454,9 @@ body {
     left: 50%;
     bottom: 6%;
     transform: translate(-50%);
+}
+
+@media (min-width: 1024px) {
 }
 
 /* Header container*/
@@ -758,7 +772,7 @@ footer .newsletter {
     display: flex;
     position: absolute;
     left: 50%;
-    top: 13%;
+    top: 200px;
     transform: translate(-50%);
 }
 
@@ -783,7 +797,7 @@ footer button {
     font-weight: 300;
 }
 
-footer h2{
+footer .social{
     display: flex;
     font-family: 'Gilda Display', serif;
     font-size: 25px;
@@ -795,25 +809,33 @@ footer .some{
     display: flex;
     position: relative;
     margin-top: 20px;
+    margin-bottom: 120px;
 }
 
 footer .some a .insta{
     height: 45px;
-    left: 35%;
-    transform: translate(-35%);
+    left: 45%;
+    transform: translate(-45%);
     display: flex;
     position: absolute;
 }
 
 footer .some a .fb{
     height: 45px;
-    left: 65%;
-    transform: translate(-65%);
+    left: 75%;
+    transform: translate(-75%);
     display: flex;
     position: absolute;
 }
 
+footer h2{
+    display: flex;
+    font-family: 'Gilda Display', serif;
+    font-size: 25px;
+    color: var(--lightbeige);
+    margin-top: 20px;
+}
+
 footer img {
-    margin-left: -30px;
-    margin-right: -26px;
+    margin: 40px -30px 30px -26px;
 }
