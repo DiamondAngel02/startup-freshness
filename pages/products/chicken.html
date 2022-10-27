@@ -18,8 +18,10 @@
     <!-- Navigation start -->
     <div class="nav">
         <!-- Logo -->
-        <a href="index.html" id="logo"><img src="/images/logo.svg" alt=""></a>
-        <!-- -->
+        <div class="logo">
+            <a href="index.html" id="logo"><img src="/images/logo.svg" alt=""></a>
+        </div>
+        <hr>
 
         <!-- Hamburger icon -->
         <input class="side-menu" type="checkbox" id="side-menu" />
@@ -35,11 +37,17 @@
             <ul class="menu">
                 <li id="" class="menu_item"><a href="/index.html">HOME</a></li>
                 <li id="" class="menu_item"><a href="/pages/products.html">PRODUCTS</a></li>
-                <li id="" class="menu_item"><a href="/pages/account.html">ACCOUNT</a></li>
+                <li id="" class="menu_item"><a href="/pages/login.html">ACCOUNT</a></li>
                 <li id="" class="menu_item"><a href="/pages/cart.html">CART (<span id="cart-nr">0</span>)</a></li>
                 <li id="" class="menu_item"><a href="/pages/blog.html">BLOG</a></li>
             </ul>
+            <div class="icons">
+                <a href="/pages/login.html"><img src="/images/accont.png" alt=""></a>
+                <a href="/pages/cart.html"><img src="/images/cart.png" alt=""></a>
+                <span>(0)</span>
+            </div>
     </div>
+
     <div class="p-btns">
         <a class="chick" href="/pages/products/chicken.html">Chicken</a>
         <a class="meat" href="/pages/products/meat.html">Meat</a>
@@ -106,7 +114,7 @@
                 mind-body diet fertility program energy healing what is wellness anyway?</p>
         </div>
     </div>
-   
+
 
 
     <div class="bottom">
@@ -131,57 +139,58 @@
                 <div>
                     <button>Add to cart</button>
                 </div>
+            </div>
+        </div>
+    </div>
 
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div>
+                <h1>Lets keep in touch!</h1>
+                <p>Get our newsletter right in <br>
+                    your digital mailbox
+                </p>
+                <div class="newsletter">
+                    <input type="text" placeholder="Email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+
+
+
+            <div id="social">
+                <h2 class="social">Your lunch pack that is with
+                    you even when you are on the move
+                </h2>
+
+                <div class="some">
+                    <a href="https://www.instagram.com/"><img class="insta" src="/images/instagram2.svg" alt=""></a>
+                    <a href="https://www.facebook.com/"><img class="fb" src="/images/facebook2.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div>
+                <h2>Åbningstider</h2>
+                <p>Telefon: 420030</p>
+                <p>Telefontider: <br>
+                    mandag-fredag: 11-15</p>
+
+                <h2>Lokation</h2>
+                <p>Freshness Aps <br>
+                    CVR: 00000000 <br>
+                    Nogotgade 09, 3000 By <br>
+                    +45 42 00 30 <br>
+                    freshness@gmail.com</p>
             </div>
 
 
         </div>
 
-    </div>
-
-
-
-
-
-
-
-
-
-    <!-- footer -->
-    <footer>
-        <h1>Lets keep in touch!</h1>
-        <p>Get our newsletter right in <br>
-            your digital mailbox
-        </p>
-        <div class="newsletter">
-            <input type="text" placeholder="Email">
-            <button>Subscribe</button>
-        </div>
-
-
-        <h2 class="social">Your lunch pack that is with
-            you even when you are on the move
-        </h2>
-
-        <div class="some">
-            <a href="https://www.instagram.com/"><img class="insta" src="/images/instagram2.svg" alt=""></a>
-            <a href="https://www.facebook.com/"><img class="fb" src="/images/facebook2.svg" alt=""></a>
-        </div>
-
-        <h2>Åbningstider</h2>
-        <p>Telefon: 420030</p>
-        <p>Telefontider: <br>
-            mandag-fredag: 11-15</p>
-
-        <h2>Lokation</h2>
-        <p>Freshness Aps <br>
-            CVR: 00000000 <br>
-            Nogotgade 09, 3000 By <br>
-            +45 42 00 30 <br>
-            freshness@gmail.com</p>
 
         <img src="/images/beige2.png" alt="pattern">
-        <p>&copy; Freshness | 2022 All Right Reserved</p>
+        <p class="copy">&copy; Freshness | 2022 All Right Reserved</p>
     </footer>
 
 </body>
