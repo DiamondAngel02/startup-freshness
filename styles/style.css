@@ -188,12 +188,13 @@ body {
 @media (min-width:1200px) {
     .logo {
         display: flex;
-        
+
         position: relative;
         width: 100vw;
-        
+
     }
-    .logo img{
+
+    .logo img {
         height: 100px;
         width: 100vw;
         text-align: center;
@@ -245,7 +246,7 @@ hr {
     background-color: var(--lightbeige);
 }
 
-.nav-menu .search input{
+.nav-menu .search input {
     background-color: var(--lightbeige);
     border-radius: 10px;
     width: 344px;
@@ -263,30 +264,30 @@ hr {
     display: none;
 }
 
-.search input::placeholder{
+.search input::placeholder {
     color: var(--beige);
 }
 
-.search input[type=text]:focus{
+.search input[type=text]:focus {
     outline: none !important;
 }
 
 .search {
     display: flex;
     position: relative;
-    
- }
+
+}
 
 .nav-menu .search img {
     height: 30px;
     position: absolute;
     margin-left: 55px;
     margin-top: 113px;
-    
+
 }
 
 .nav {
-    max-height: 0;    
+    max-height: 0;
 }
 
 /* Menu Icon */
@@ -393,7 +394,7 @@ hr {
         text-align: center;
     }
 
-    .icons a img{
+    .icons a img {
         display: flex;
         margin-left: 15px;
     }
@@ -403,7 +404,7 @@ hr {
         width: 300px;
     }
 
-    .nav-menu .search img{
+    .nav-menu .search img {
         margin-top: 10px;
     }
 
@@ -413,6 +414,7 @@ hr {
         padding-right: 220px;
         height: 100px;
     }
+
     .menu ul {
         display: flex;
         position: absolute;
@@ -421,10 +423,12 @@ hr {
 
     .menu li {
         float: left;
-      color: var(--black);
+        color: var(--black);
     }
 
-    .menu li:nth-child(3), li:nth-child(4), li:nth-child(5){
+    .menu li:nth-child(3),
+    li:nth-child(4),
+    li:nth-child(5) {
         display: none;
     }
 
@@ -461,7 +465,7 @@ hr {
     display: none;
 }
 
-.pop-header .backg-s{
+.pop-header .backg-s {
     display: flex;
     position: absolute;
     width: 100%;
@@ -478,7 +482,8 @@ hr {
         margin-top: 120px;
 
     }
-    .pop-header .backg-x{
+
+    .pop-header .backg-x {
         width: 100vw;
         display: flex;
     }
@@ -495,7 +500,7 @@ hr {
     width: 100vw;
     background-color: var(--green);
     left: 50%;
-    transform: translate(-50%);  
+    transform: translate(-50%);
 }
 
 #h1-container h1 {
@@ -509,7 +514,7 @@ hr {
 
 .pop-button .btn-txt {
     display: flex;
-    position: absolute;  
+    position: absolute;
     color: var(--lightbeige);
     font-size: 20px;
     text-align: center;
@@ -528,17 +533,18 @@ hr {
     #h1-container {
         height: 220px;
     }
+
     #h1-container h1 {
         font-family: 'Gilda Display', serif;
-        font-size: 70px;  
-        margin-left: 120px;  
+        font-size: 70px;
+        margin-left: 120px;
     }
 
     .pop-button .btn-txt {
         font-size: 36px;
         padding: 30px 50px;
-        z-index: 999; 
-        bottom: 15%; 
+        z-index: 999;
+        bottom: 15%;
         left: 75%;
         transform: translate(none);
     }
@@ -547,14 +553,14 @@ hr {
 /* Header container*/
 
 .header {
- background-image: url(/images/header-back.svg);
- background-repeat: no-repeat;
- display: flex;
- flex-direction: column;
- position: relative;
- width: 428px;
- height: 525px;
- margin-top: 50px;
+    background-image: url(/images/header-back.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 428px;
+    height: 525px;
+    margin-top: 50px;
 }
 
 
@@ -579,7 +585,7 @@ hr {
 
 }
 
-.header .product{
+.header .product {
     text-decoration: none;
     font-size: 20px;
     padding: 20px;
@@ -596,7 +602,7 @@ hr {
     cursor: pointer;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
     .header {
         background-image: url(/images/h-backg.jpg);
         width: 100vw;
@@ -604,7 +610,7 @@ hr {
         background-size: 100vw;
     }
 
-    .header h1{
+    .header h1 {
         font-size: 70px;
         margin-left: 120px;
         width: 500px;
@@ -613,6 +619,7 @@ hr {
     .header h1 br {
         display: none;
     }
+
     .header p {
         font-size: 30px;
         margin-top: 200px;
@@ -620,6 +627,7 @@ hr {
         width: 430px;
         line-height: 1.25em;
     }
+
     .header .product {
         padding: 30px 60px;
         font-size: 30px;
@@ -630,7 +638,7 @@ hr {
 }
 
 /* Features container */
-.feature { 
+.feature {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -674,13 +682,13 @@ hr {
     display: none;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
     .feature {
         height: 600px;
         width: 100vw;
     }
 
-    .feature h1{
+    .feature h1 {
         font-size: 90px;
     }
 
@@ -697,6 +705,7 @@ hr {
         bottom: 12%;
         transform: translate(-50%);
     }
+
     .feature .emblems {
         display: none;
     }
@@ -728,18 +737,20 @@ hr {
     text-align: center;
 }
 
-@media (min-width: 1200px){
-    .choose{
+@media (min-width: 1200px) {
+    .choose {
         height: 300px;
         margin-top: 100px;
         margin-bottom: 150px;
     }
+
     .choose h1 {
         font-size: 70px;
     }
+
     .choose p {
         font-size: 40px;
-    } 
+    }
 }
 
 /* boxes */
@@ -753,7 +764,9 @@ hr {
     flex-direction: column;
 }
 
-.box_1, .box_2, .box_3 {
+.box_1,
+.box_2,
+.box_3 {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -763,10 +776,12 @@ hr {
     margin-top: 30px;
     margin-right: 0%;
     left: 50%;
-    transform: translate(-50%);  
+    transform: translate(-50%);
 }
 
-.box_1 img, .box_2 img, .box_3 img{
+.box_1 img,
+.box_2 img,
+.box_3 img {
     display: flex;
     position: absolute;
     height: 163px;
@@ -776,7 +791,9 @@ hr {
     transform: translate(-50%);
 }
 
-.box_1 p, .box_2 p, .box_3 p{
+.box_1 p,
+.box_2 p,
+.box_3 p {
     display: flex;
     position: absolute;
     font-size: 16px;
@@ -789,14 +806,17 @@ hr {
     transform: translate(-50%);
 }
 
-@media (min-width: 1200px){
-    .big-box{
-        flex-direction: row; 
+@media (min-width: 1200px) {
+    .big-box {
+        flex-direction: row;
         width: 100vw;
         justify-content: center;
         height: 500px;
     }
-    .box_1, .box_2, .box_3 {
+
+    .box_1,
+    .box_2,
+    .box_3 {
         left: 15%;
         width: 400px;
         transform: translate(none);
@@ -804,17 +824,26 @@ hr {
         margin-top: 0px;
         padding-bottom: 430px;
     }
-    .box_1 img, .box_2 img, .box_3 img{
+
+    .box_1 img,
+    .box_2 img,
+    .box_3 img {
         width: 200px;
         height: auto;
     }
-    .box_1 p, .box_2 p, .box_3 p{
+
+    .box_1 p,
+    .box_2 p,
+    .box_3 p {
         font-size: 25px;
         width: 300px;
     }
-    .box_1 p br, .box_2 p br, .box_3 p br{
+
+    .box_1 p br,
+    .box_2 p br,
+    .box_3 p br {
         display: none;
-}
+    }
 }
 
 /* review container */
@@ -845,7 +874,7 @@ hr {
     text-align: center;
 }
 
-.reviews p{
+.reviews p {
     display: flex;
     font-size: 20px;
     justify-content: center;
@@ -870,25 +899,28 @@ hr {
     bottom: 1.5%;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
     .rev {
         display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 100px;
     }
+
     .reviews h2 {
         font-size: 60px;
     }
-    .reviews p{
+
+    .reviews p {
         font-size: 36px;
     }
+
     .reviews .star1 {
         position: relative;
         bottom: 5%;
     }
 
-    .reviews .star2{
+    .reviews .star2 {
         bottom: 5%;
         position: relative;
     }
@@ -899,14 +931,14 @@ hr {
 /* divider */
 
 .rec {
-     width: 100vw;
-     height: 120px;
-     background-color: var(--black);
-     display: flex;
-     position: relative;
-     flex-direction: column;
-     text-align: center;
-     margin-top: 50px;
+    width: 100vw;
+    height: 120px;
+    background-color: var(--black);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .rec h1 {
@@ -917,7 +949,7 @@ hr {
     justify-content: center;
     text-align: center;
     color: var(--lightbeige);
-  
+
 }
 
 .rec p {
@@ -930,18 +962,41 @@ hr {
 }
 
 @media (min-width: 1200px) {
-   .rec{
- height: 200px;
-   }
-   
+    .rec {
+        height: 200px;
+    }
+    .rec h1 {
+        font-size: 54px;
+        padding-top: 20px;
+    }
+    .rec p {
+        font-size: 36px;
+        padding-top: 20px;
+    }
+
 }
 
 /* products */
 
-.producter img{
+.producter img {
     height: auto;
     width: 100vw;
     margin-top: 50px;
+}
+
+@media (min-width: 1200px) {
+    .producter {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+    }
+    .producter img {
+        width: 370px;
+        margin-top: 0px;
+    }
 }
 
 /* Footer */
@@ -954,7 +1009,7 @@ footer {
     flex-direction: column;
 }
 
-footer h1{
+footer h1 {
     display: flex;
     font-family: 'Gilda Display', serif;
     font-size: 36px;
@@ -962,7 +1017,7 @@ footer h1{
     color: var(--lightbeige);
 }
 
-footer p{
+footer p {
     display: flex;
     font-size: 20px;
     margin-top: 5px;
@@ -980,8 +1035,8 @@ footer .newsletter {
 
 footer input {
     border-radius: 10px;
-    width:283px;
-    height:46px;
+    width: 283px;
+    height: 46px;
     border: none;
     padding-left: 20px;
     font-size: 16px;
@@ -999,7 +1054,7 @@ footer button {
     font-weight: 300;
 }
 
-footer .social{
+footer .social {
     display: flex;
     font-family: 'Gilda Display', serif;
     font-size: 25px;
@@ -1007,14 +1062,14 @@ footer .social{
     margin-top: 150px;
 }
 
-footer .some{
+footer .some {
     display: flex;
     position: relative;
     margin-top: 20px;
     margin-bottom: 120px;
 }
 
-footer .some a .insta{
+footer .some a .insta {
     height: 45px;
     left: 45%;
     transform: translate(-45%);
@@ -1022,7 +1077,7 @@ footer .some a .insta{
     position: absolute;
 }
 
-footer .some a .fb{
+footer .some a .fb {
     height: 45px;
     left: 75%;
     transform: translate(-75%);
@@ -1030,7 +1085,7 @@ footer .some a .fb{
     position: absolute;
 }
 
-footer h2{
+footer h2 {
     display: flex;
     font-family: 'Gilda Display', serif;
     font-size: 25px;
