@@ -870,15 +870,42 @@ hr {
     bottom: 1.5%;
 }
 
+@media (min-width: 1200px){
+    .rev {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+    }
+    .reviews h2 {
+        font-size: 60px;
+    }
+    .reviews p{
+        font-size: 36px;
+    }
+    .reviews .star1 {
+        position: relative;
+        bottom: 5%;
+    }
+
+    .reviews .star2{
+        bottom: 5%;
+        position: relative;
+    }
+}
+
+
+
 /* divider */
 
 .rec {
      width: 100vw;
-     height: 112px;
+     height: 120px;
      background-color: var(--black);
      display: flex;
      position: relative;
      flex-direction: column;
+     text-align: center;
      margin-top: 50px;
 }
 
@@ -900,6 +927,13 @@ hr {
     justify-content: center;
     text-align: center;
     color: var(--lightbeige);
+}
+
+@media (min-width: 1200px) {
+   .rec{
+ height: 200px;
+   }
+   
 }
 
 /* products */
