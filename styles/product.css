@@ -1,8 +1,8 @@
 /* Theming */
 /* import font */
-@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:wght@300;400;500;600&display=swap');
 
-
+/* variables for the colors that will be used on the page, to add use var(--COLOUR) instead of hex or rgb*/
 :root {
     --white: #ffff;
     --black: #1F2125;
@@ -14,13 +14,164 @@
     --blue: #8D95C3;
 }
 
+/* Reset to none*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html {
+    background-color: var(--lightbeige);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    vertical-align: baseline;
+    color: var(--black);
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background-color: var(--lightbeige);
+}
 
 /* promo banner */
 .promo {
     display: block;
     font-size: 16px;
-    margin-top: 0px;
     background-color: var(--black);
     color: var(--lightbeige);
     padding: 4px;
@@ -32,6 +183,36 @@
 #logo {
     margin: 10px 16px;
     float: right;
+}
+
+@media (min-width:1200px) {
+    .logo {
+        display: flex;
+
+        position: relative;
+        width: 100vw;
+
+    }
+
+    .logo img {
+        height: 100px;
+        width: 100vw;
+        text-align: center;
+    }
+}
+
+/* Line */
+hr {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    hr {
+        width: 90%;
+        display: flex;
+        margin: auto;
+
+    }
 }
 
 /* Nav menu */
@@ -65,7 +246,7 @@
     background-color: var(--lightbeige);
 }
 
-.nav-menu .search input{
+.nav-menu .search input {
     background-color: var(--lightbeige);
     border-radius: 10px;
     width: 344px;
@@ -79,30 +260,34 @@
     margin-top: 100px;
 }
 
-.search input::placeholder{
+.icons {
+    display: none;
+}
+
+.search input::placeholder {
     color: var(--beige);
 }
 
-.search input[type=text]:focus{
+.search input[type=text]:focus {
     outline: none !important;
 }
 
- .search {
+.search {
     display: flex;
     position: relative;
-    
- }
+
+}
 
 .nav-menu .search img {
     height: 30px;
     position: absolute;
     margin-left: 55px;
     margin-top: 113px;
-    
+
 }
 
 .nav {
-    max-height: 0;    
+    max-height: 0;
 }
 
 /* Menu Icon */
@@ -180,49 +365,71 @@
 }
 
 /* Responsiveness */
-@media (min-width: 550px) {
-    .nav {
+@media (min-width: 1200px) {
+    .nav-menu {
         max-height: none;
         top: 0;
         position: relative;
-        float: left;
-        width: fit-content;
-
-    }
-
-    .menu li {
-        float: left;
-    }
-
-    .menu a {
-        font-size: 25px;
-        padding: 1px;
-    }
-
-    .menu a:hover {
-        background-color: transparent;
-        color: var(--lightbeige);
-
-    }
-
-    .hamb {
-        display: none;
-    }
-}
-
-@media (min-width: 1024px) {
-    .nav {
-        max-height: none;
-        top: 0;
-        position: relative;
-        width: fit-content;
         display: flex;
+        flex-direction: row;
+        display: flex;
+        overflow: visible;
+        background-color: transparent;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 100px;
+        gap: 10px;
+    }
 
+    .icons {
+        display: flex;
+        width: 150px;
+        height: 50px;
+        padding-top: 20px;
+    }
+
+    .icons span {
+        display: flex;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .icons a img {
+        display: flex;
+        margin-left: 15px;
+    }
+
+    .nav-menu .search input {
+        margin-top: 0px;
+        width: 300px;
+    }
+
+    .nav-menu .search img {
+        margin-top: 10px;
+    }
+
+    .menu {
+        padding-top: 0px;
+        padding-left: 90px;
+        padding-right: 220px;
+        height: 100px;
+    }
+
+    .menu ul {
+        display: flex;
+        position: absolute;
+        top: 0px;
     }
 
     .menu li {
-      float: left
+        float: left;
+        color: var(--black);
+    }
 
+    .menu li:nth-child(3),
+    li:nth-child(4),
+    li:nth-child(5) {
+        display: none;
     }
 
     .menu a {
@@ -231,15 +438,15 @@
     }
 
     .menu a:hover {
-        background-color: transparent;
         color: var(--beige);
-
     }
 
     .hamb {
         display: none;
     }
 }
+/* nav end */
+/* 
 
 /* Nav Menu end */
 
@@ -305,6 +512,7 @@
 
 h2, h3, h4 {
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 ul {
@@ -314,66 +522,23 @@ ul {
 a, .borderbox1 h2, .borderbox2 h2, .borderbox3 h2{
     color: var(--lightbeige);
 }
+.borderbox1, .borderbox2, .borderbox3 {
+    margin-top: 200px;
+    text-align: center;
+}
 
 
 /*Telefon til computer*/
-@media (min-width: 550px) {
-    .nav {
-        max-height: none;
-        top: 0;
-        position: relative;
-        float: left;
-        width: fit-content;
-
+@media (min-width:1200px) {
+    .borderbox1, .borderbox2, .borderbox3 {
+           display: flex;
+           justify-content: center;
+           width: 325px;
     }
-
-    .menu li {
-        float: left;
+    h2, h3, h4 {
+        font-size: 36px;
+        margin-bottom: 20px;
     }
-
-    .menu a {
-        font-size: 25px;
-        padding: 1px;
-    }
-
-    .menu a:hover {
-        background-color: transparent;
-        color: var(--lightbeige);
-
-    }
-
-    .hamb {
-        display: none;
-    }
-}
-
-@media (min-width: 1024px) {
-    .nav {
-        max-height: none;
-        top: 0;
-        position: relative;
-        width: fit-content;
-        display: flex;
-
-    }
-
-    .menu a {
-        font-size: 28px;
-        padding: 19px;
-    }
-
-    .menu a:hover {
-        background-color: transparent;
-        color: var(--beige);
-
-    }
-
-    .hamb {
-        display: none;
-    }
-}
-
-@media (min-width: 1024px) {
 }
 
 /* Footer */
@@ -386,7 +551,7 @@ footer {
     flex-direction: column;
 }
 
-footer h1{
+footer h1 {
     display: flex;
     font-family: 'Gilda Display', serif;
     font-size: 36px;
@@ -394,7 +559,7 @@ footer h1{
     color: var(--lightbeige);
 }
 
-footer p{
+footer p {
     display: flex;
     font-size: 20px;
     margin-top: 5px;
@@ -412,8 +577,8 @@ footer .newsletter {
 
 footer input {
     border-radius: 10px;
-    width:283px;
-    height:46px;
+    width: 283px;
+    height: 46px;
     border: none;
     padding-left: 20px;
     font-size: 16px;
@@ -431,7 +596,7 @@ footer button {
     font-weight: 300;
 }
 
-footer .social{
+footer .social {
     display: flex;
     font-family: 'Gilda Display', serif;
     font-size: 25px;
@@ -439,14 +604,14 @@ footer .social{
     margin-top: 150px;
 }
 
-footer .some{
+footer .some {
     display: flex;
     position: relative;
     margin-top: 20px;
     margin-bottom: 120px;
 }
 
-footer .some a .insta{
+footer .some a .insta {
     height: 45px;
     left: 45%;
     transform: translate(-45%);
@@ -454,7 +619,7 @@ footer .some a .insta{
     position: absolute;
 }
 
-footer .some a .fb{
+footer .some a .fb {
     height: 45px;
     left: 75%;
     transform: translate(-75%);
@@ -462,7 +627,7 @@ footer .some a .fb{
     position: absolute;
 }
 
-footer h2{
+footer h2 {
     display: flex;
     font-family: 'Gilda Display', serif;
     font-size: 25px;
@@ -472,4 +637,54 @@ footer h2{
 
 footer img {
     margin: 40px -30px 30px -26px;
+}
+
+@media (min-width:1200px){
+    .footer{
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+    }
+    footer h1 {
+        font-size: 40px;
+        width: 400px;
+    }
+    footer p {
+        margin-top: 20px;
+        font-size: 26px;
+    }   
+    footer .newsletter {
+        left: 45px;
+    top: 220px;
+    transform: translate(0%);
+    }
+
+    footer .social{
+        margin-top: 45px;
+        text-align: center;
+    }
+    footer .some {
+        justify-content: center;
+    }
+    footer #social {
+        margin-right: 50px;
+    }
+    footer h2{
+        font-size: 30px;
+        margin-top: 45px;
+    }
+    footer p{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    footer img {
+        height: 100px;
+        margin: 40px -30px 15px -26px;
+    }
+    .copy{
+        width: 100vw;
+        justify-content: center;
+        margin-bottom: 20px;
+    } 
+   
 }

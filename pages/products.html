@@ -15,16 +15,18 @@
     <p class="promo">Promocode! - velkommen15</p>
     <!-- Navigation start -->
     <div class="nav">
-  <!-- Logo -->
-  <a href="index.html" id="logo"><img src="/images/logo.svg" alt=""></a>
-  <!-- -->
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html" id="logo"><img src="/images/logo.svg" alt=""></a>
+        </div>
+        <hr>
 
-  <!-- Hamburger icon -->
-  <input class="side-menu" type="checkbox" id="side-menu" />
-  <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu" />
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
 
-        <!-- Drop-down liste-->
-            <nav class="nav-menu">
+        <!-- Menu-->
+        <nav class="nav-menu">
             <div class="search">
                 <img src="/images/small.png" alt="">
                 <input type="text" placeholder="Search" name="seach" id="">
@@ -37,7 +39,13 @@
                 <li id="" class="menu_item"><a href="/pages/cart.html">CART (<span id="cart-nr">0</span>)</a></li>
                 <li id="" class="menu_item"><a href="/pages/blog.html">BLOG</a></li>
             </ul>
+            <div class="icons">
+                <a href="/pages/login.html"><img src="/images/accont.png" alt=""></a>
+                <a href="/pages/cart.html"><img src="/images/cart.png" alt=""></a>
+                <span>(0)</span>
+            </div>
     </div>
+
     
     <!--Box menu-->
     <div class="borderbox1">
@@ -65,39 +73,55 @@
     </div>  
          
     <!-- Nederste side/footer -->
-    <footer>
-        <h1>Lets keep in touch!</h1>
-        <p>Get our newsletter right in <br>
-            your digital mailbox
-        </p>
-        <div class="newsletter">
-            <input type="text" placeholder="Email">
-        <button>Subscribe</button>
+     <!-- footer -->
+     <footer>
+        <div class="footer">
+            <div>
+                <h1>Lets keep in touch!</h1>
+                <p>Get our newsletter right in <br>
+                    your digital mailbox
+                </p>
+                <div class="newsletter">
+                    <input type="text" placeholder="Email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+
+
+
+            <div id="social">
+                <h2 class="social">Your lunch pack that is with
+                    you even when you are on the move
+                </h2>
+
+                <div class="some">
+                    <a href="https://www.instagram.com/"><img class="insta" src="/images/instagram2.svg" alt=""></a>
+                    <a href="https://www.facebook.com/"><img class="fb" src="/images/facebook2.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div>
+                <h2>Åbningstider</h2>
+                <p>Telefon: 420030</p>
+                <p>Telefontider: <br>
+                    mandag-fredag: 11-15</p>
+
+                <h2>Lokation</h2>
+                <p>Freshness Aps <br>
+                    CVR: 00000000 <br>
+                    Nogotgade 09, 3000 By <br>
+                    +45 42 00 30 <br>
+                    freshness@gmail.com</p>
+            </div>
+
+
         </div>
 
-        <h2 class="social">Your lunch pack that is with
-            you even when you are on the move
-        </h2>
-
-        <div class="some">
-            <a href="https://www.instagram.com/"><img class="insta" src="/images/instagram2.svg" alt=""></a>
-        <a href="https://www.facebook.com/"><img class="fb" src="/images/facebook2.svg" alt=""></a>
-        </div>
-
-        <h2>Åbningstider</h2>
-        <p>Telefon: 420030</p>
-        <p>Telefontider: <br>
-            mandag-fredag: 11-15</p>
-
-        <h2>Lokation</h2>
-        <p>Freshness Aps <br>
-            CVR: 00000000 <br>
-            Nogotgade 09, 3000 By <br>
-            +45 42 00 30 <br>
-            freshness@gmail.com</p>
 
         <img src="/images/beige2.png" alt="pattern">
-        <p>&copy; Freshness | 2022 All Right Reserved</p>
+        <p class="copy">&copy; Freshness | 2022 All Right Reserved</p>
     </footer>
+
 </body>
+
 </html>
